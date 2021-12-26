@@ -12,9 +12,9 @@ const EventSlider = (props) => {
   };
   return (
     <div className="event-slider-wrapper">
-      <Carousel activeIndex={index} onSelect={handleSelect} controls={false}>
+      <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} controls={false}>
         {dumdata.jumbo.events.map((i) => (
-          <Carousel.Item key={i.name} interval={3000}>
+          <Carousel.Item key={i.name} interval={3000} >
             <h3 className="title">{i.name}</h3>
             <p className="text">{i.description}</p>
             <p className="date">{i.date}</p>
